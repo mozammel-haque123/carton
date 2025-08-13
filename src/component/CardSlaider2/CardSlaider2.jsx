@@ -20,15 +20,9 @@ const CardSlaider2 = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 1,
     arrows: true,
-    responsive: [
-      { breakpoint: 1280, settings: { slidesToShow: 4 } },
-      { breakpoint: 1024, settings: { slidesToShow: 3 } },
-      { breakpoint: 640, settings: { slidesToShow: 2 } },
-      { breakpoint: 480, settings: { slidesToShow: 1 } },
-    ],
+    slidesToScroll: 1,
+    variableWidth: true,     
   };
 
   return (
@@ -38,27 +32,22 @@ const CardSlaider2 = () => {
 
         <Slider {...settings}>
           {data.map((d, idx) => (
-            <div key={d.id} className="px-2">
+            <div key={d.id} className="px-2" style={{ width: "clamp(180px,22vw,260px)" }}>
               <div className="relative group">
-                {/* BORDER: SVG polygon (চারদিক বর্ডার, কোনো fill নেই) */}
-          <div>
-                  <svg
+                <svg
                   className="absolute inset-0 w-full h-full pointer-events-none rounded-sm"
                   viewBox="0 0 100 100"
                   preserveAspectRatio="none"
                 >
-                  {/* শেপটা আগের মতোই: নিচের ডান দিকে কাটা/notch */}
                   <polygon
                     points="0,0 100,0 100,55 90,100 0,100"
                     fill="none"
-                    stroke="rgb(127, 255, 206, 0.5)" /* cyan-300 approx */
-                    strokeWidth="1"
+                    stroke="rgb(127, 255, 206, 0.5)"   
+                    strokeWidth="1.5"
                     className="group-hover:[stroke:rgb(59,130,246)]"
                   />
                 </svg>
-          </div>
 
-                {/* CONTENT: transparent background, শুধু ক্লিপ-পাথ শেপ */}
                 <div
                   className="relative rounded-lg overflow-hidden shadow-lg"
                   style={{

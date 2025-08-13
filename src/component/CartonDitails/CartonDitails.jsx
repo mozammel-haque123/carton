@@ -19,7 +19,7 @@ const CartonDetails = () => {
   backgroundSize: 'cover', 
   backgroundPosition: 'center' 
 }}>
-        {/* Name & Image */}
+
         <div>
 
         </div>
@@ -29,7 +29,7 @@ const CartonDetails = () => {
             src={data.image}
             alt={data.name}
             className="md:w-65 w-full h-60 rounded-lg shadow-lg  border-2 border-solid border-transparent
-    [border-image:linear-gradient(90deg,rgba(5,251,255,.55),rgba(0,252,8,.55))_1]
+    [border-image:linear-gradient(90deg,rgba(5,251,255,.20),rgba(0,252,8,.20))_1]
     hover:[border-image:linear-gradient(90deg,rgba(59,130,246,.6),rgba(34,197,94,.6))_1]  p-6  border-green-200 bg-white b"
           />
     
@@ -37,14 +37,13 @@ const CartonDetails = () => {
 
         <div className="border h-50 border-emerald-300 hidden md:block"></div>
 
-        {/* Status, Species, Gender */}
         <div className="md:w-6/12 space-y-6 w-full">
         <div className="flex gap-6">
          <div
   className="
     p-4 rounded-lg shadow w-full
     border-2 border-solid border-transparent
-    [border-image:linear-gradient(90deg,rgba(5,251,255,.55),rgba(0,252,8,.55))_1]
+    [border-image:linear-gradient(90deg,rgba(5,251,255,.20),rgba(0,252,8,.20))_1]
     hover:[border-image:linear-gradient(90deg,rgba(59,130,246,.6),rgba(34,197,94,.6))_1]
   "
 >
@@ -56,7 +55,7 @@ const CartonDetails = () => {
   className="
     p-4 rounded-lg shadow w-full
     border-2 border-solid border-transparent
-    [border-image:linear-gradient(90deg,rgba(5,251,255,.55),rgba(0,252,8,.55))_1]
+    [border-image:linear-gradient(90deg,rgba(5,251,255,.20),rgba(0,252,8,.20))_1]
     hover:[border-image:linear-gradient(90deg,rgba(59,130,246,.6),rgba(34,197,94,.6))_1]
   "
 >
@@ -68,7 +67,7 @@ const CartonDetails = () => {
   className="
     p-4 rounded-lg shadow w-full
     border-2 border-solid border-transparent
-    [border-image:linear-gradient(90deg,rgba(5,251,255,.55),rgba(0,252,8,.55))_1]
+    [border-image:linear-gradient(90deg,rgba(5,251,255,.20),rgba(0,252,8,.20))_1]
     hover:[border-image:linear-gradient(90deg,rgba(59,130,246,.6),rgba(34,197,94,.6))_1]
   "
 >
@@ -78,10 +77,9 @@ const CartonDetails = () => {
           </div>
         </div>
 
-        {/* Origin & Location */}
         <div className="flex flex-col gap-6">
           <div className="p-4 rounded-lg shadow  border-2 border-solid border-transparent
-    [border-image:linear-gradient(90deg,rgba(5,251,255,.55),rgba(0,252,8,.55))_1]
+    [border-image:linear-gradient(90deg,rgba(5,251,255,.20),rgba(0,252,8,.20))_1]
     hover:[border-image:linear-gradient(90deg,rgba(59,130,246,.6),rgba(34,197,94,.6))_1]">
              <img className="w-8" src={origin} alt="origin" />
             <p className="text-gray-400 text-sm">Origin</p>
@@ -92,7 +90,7 @@ const CartonDetails = () => {
      
           </div>
           <div className="p-4 rounded-lg shadow  border-2 border-solid border-transparent
-    [border-image:linear-gradient(90deg,rgba(5,251,255,.55),rgba(0,252,8,.55))_1]
+    [border-image:linear-gradient(90deg,rgba(5,251,255,.20),rgba(0,252,8,.20))_1]
     hover:[border-image:linear-gradient(90deg,rgba(59,130,246,.6),rgba(34,197,94,.6))_1]">
              <img className="w-8" src={location} alt="location" />
             <p className="text-gray-400 text-sm">Last Known Location</p>
@@ -104,10 +102,8 @@ const CartonDetails = () => {
           </div>
 
 
-
-              {/* Episodes */}
             <div className="p-4 rounded-lg shadow  border-2 border-solid border-transparent
-    [border-image:linear-gradient(90deg,rgba(5,251,255,.55),rgba(0,252,8,.55))_1]
+    [border-image:linear-gradient(90deg,rgba(5,251,255,.20),rgba(0,252,8,.20))_1]
     hover:[border-image:linear-gradient(90deg,rgba(59,130,246,.6),rgba(34,197,94,.6))_1]">
               
 <svg
