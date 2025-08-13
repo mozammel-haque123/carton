@@ -23,7 +23,7 @@ const Carton = () => {
   };
 
   return (
-    <div className="p-6">
+    <div className="px-6">
       {/* disabled arrow hide করার CSS */}
       <style>{`
         .slick-arrow.slick-disabled { 

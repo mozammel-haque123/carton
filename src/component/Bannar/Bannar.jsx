@@ -2,6 +2,7 @@ import bubel from '../../assets/bubble.png'
 import portal from '../../assets/portal.png'
 import pill from '../../assets/pill.png'
 import gun from '../../assets/gun.png'
+import logo from '../../assets/logo.png'
 
 import { FaRegCirclePlay } from 'react-icons/fa6';
 import { useLocation } from 'react-router-dom';
@@ -10,7 +11,10 @@ const Bannar = () => {
   const location = useLocation()
     return (
         <div> 
-             <h1 className="text-center text-transparent bg-clip-text bg-gradient-to-r from-[#05fbff] to-[#00fc08] font-bold">Rick AND MORTY</h1>
+          <div className='flex justify-center my-2'>
+       <img src={logo} className='w-35' alt="" />  
+          </div>
+     
          <div className={location.pathname.startsWith('/ditails/') ? 'hidden' : `flex flex-col items-center justify-center my-10`}>
           <div className='relative'>
     {/* 1 line */}

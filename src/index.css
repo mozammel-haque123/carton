@@ -18,3 +18,7 @@ background: linear-gradient(293deg, rgba(0, 251, 255, 1) 0%, rgba(5, 255, 230, 1
 .k{
    background-color: rgb(127, 255, 206,);
 }
+
+.bor{
+  border: 1px, solid, rgb(94, 221, 106);
+}
